@@ -18,6 +18,10 @@ change?
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	If you have a program that works, it's probably best to ensure that the 
+	master branch continues to work. Changes can be made on branches, and get
+	completed and tested before being merged into the master.
+
 How do the diagrams help you visualize the branch structure?
 
 What is the result of merging two branches together? Why do we represent it in
