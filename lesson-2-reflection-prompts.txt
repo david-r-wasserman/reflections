@@ -24,8 +24,32 @@ organized? How would branches help?
 
 How do the diagrams help you visualize the branch structure?
 
+	By labeling the branch tips and connecting each commit to its parent.
+
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+	Merging branches a and b: Let X be the last commit that's on both branches. 
+	Let Y be the set of changes made on branch a since X. Let Z be the set of
+	changes made on branch b since X. Let W be the union of Y and Z. Then W 
+	is the set of changes between X and the merged branch.
+	
+	We show the branches combined, because the merge is a valid continuation 
+	of both lines of development.
+
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+	The pro is that it's a lot easier. The con is that it can fool you into
+	thinking the result is correct. Even if both branches work correctly and 
+	the automatic merge is successful, that doesn't mean the merged code 
+	will work correctly. For example, suppose the team decides to add a new
+	feature, so that a price will be reduced 10% if a certain condition is
+	met. If this feature is added in both branches, but the added code is
+	in two different places, then the merged code will have the added code 
+	in both places, and this could result in a 19% price reduction. I think 
+	conflicts like this can happen even if the changes are in different files.
+	The only way to ensure correct merges is to have someone who understands
+	the whole module and approves all changes.
+	
+	
