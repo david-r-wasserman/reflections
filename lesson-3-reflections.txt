@@ -1,0 +1,7 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+  I want to do this every time I develop software, because the remote serves as a backup: if my computer fails, I can recover
+  the files from the remote. Here's some other reasons to use a remote:
+  1. I can collaborate with other developers who use their own computers and push to the same remote.
+  2. Users can download the software from GitHub.
+  3. Potential employers can look at my GitHub account to see what I can do.
