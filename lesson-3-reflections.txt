@@ -1,7 +1,47 @@
-When would you want to use a remote repository rather than keeping all your work local?
+When would you want to use a remote repository rather than keeping all your 
+work local?
 
-  I want to do this every time I develop software, because the remote serves as a backup: if my computer fails, I can recover
-  the files from the remote. Here's some other reasons to use a remote:
-  1. I can collaborate with other developers who use their own computers and push to the same remote.
+  I want to do this every time I develop software, because the remote serves 
+  as a backup: if my computer fails, I can recover the files from the remote. 
+  Here's some other reasons to use a remote:
+  1. I can collaborate with other developers who use their own computers and 
+  push to the same remote.
   2. Users can download the software from GitHub.
   3. Potential employers can look at my GitHub account to see what I can do.
+
+Why might you want to always pull changes manually rather than having Git 
+automatically stay up-to-date with your remote repository?
+  
+  Bad things can happen if you pull when you have uncommitted changes. Even
+  if you don't have uncommitted changes, you should get to a good stopping
+  point in your development before pulling, rather than interrupting your
+  coding to deal with merge conflicts.  
+  
+Describe the differences between forks, clones, and branches. When would you 
+use one instead of another?  
+
+  Both fork and clone make a complete copy of a repo. The difference is that
+  in a fork, both the original and the copy are on GitHub (or some other Git
+  server.) A branch is just an additional pointer into a commit history.
+  
+  The word 'fork' normally means creating a copy that will be developed
+  independently from the original. That can happen in GitHub, but many
+  forks exist for the purpose of suggesting changes to be merged back into
+  the original repo. If the repo owners trust me, they can make me a 
+  collaborator, and then I will clone the repo, make changes on my computer,
+  and push them to GitHub. If they don't trust me, then I can fork the
+  original repo, clone my fork, make changes on my computer, push them to
+  my fork on GitHub, and then submit a pull request to the original repo.
+  
+  I would make a branch any time I want to make changes without overwriting
+  current master. This applies both when I'm in charge and when I'm not. 
+  Examples:
+  1. I'm making a change that's too big for one commit. When I finish the 
+  change and the branch is now working correctly, merge it into the master.
+  2. I'm trying something and I'm not sure it will work.
+  3. I want to have another version.
+  
+What is the benefit of having a copy of the last known state of the remote 
+stored locally?  
+  
+  It's good to store it locally so I can get to it offline.
