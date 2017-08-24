@@ -45,3 +45,17 @@ What is the benefit of having a copy of the last known state of the remote
 stored locally?  
   
   It's good to store it locally so I can get to it offline.
+  
+How would you collaborate without using Git or GitHub? What would be easier, 
+and what would be harder?  
+
+  If I was leading a development team without version control, I would keep 
+  the code base on a share drive. Members could suggest changes by creating
+  a "branch", which would be another folder on the same drive containing a 
+  copy of the code base. Members would have to keep track of which files they 
+  change, or figure it out by seeing which files have been modified recently. 
+  I would manually do all merges into the master branch. I would save old
+  versions by creating more folders that each contain the whole code base.
+  We would waste a lot of time waiting for the OS to copy the whole code base
+  into a new folder, and we might run out of disk space. Manual merges would 
+  be harder. The only advantage I see is that no one has to learn Git.  
