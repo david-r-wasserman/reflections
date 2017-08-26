@@ -58,4 +58,12 @@ and what would be harder?
   versions by creating more folders that each contain the whole code base.
   We would waste a lot of time waiting for the OS to copy the whole code base
   into a new folder, and we might run out of disk space. Manual merges would 
-  be harder. The only advantage I see is that no one has to learn Git.  
+  be harder. The only advantage I see is that no one has to learn Git.
+
+When would you want to make changes in a separate branch rather than directly 
+in master? What benefits does each approach have?  
+
+  Any time I'm making changes that I'm not sure will be a permanent part of
+  the master, I should make them on a separate branch. Even if my local copy
+  is not the official copy, I should keep my master the same as the official
+  master in case I need to use it.
